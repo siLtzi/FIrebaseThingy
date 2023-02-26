@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leaderboard</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Username</th>
+          <th>First Place</th>
+          <th>Second Place</th>
+          <th>Third Place</th>
+          <th>Total Points</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% leaderboardData.forEach(function(entry, index) { %>
+          <tr>
+            <td><%= index + 1 %></td>
+            <td><%= entry.userName %></td>
+            <td><%= entry.firstPlace %></td>
+            <td><%= entry.secondPlace %></td>
+            <td><%= entry.thirdPlace %></td>
+            <td><%= entry.points %></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </body>
+</html>

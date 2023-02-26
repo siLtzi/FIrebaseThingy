@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GVFL</title>
+	<style>
+		body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			margin: 0;
+			background-color: #333;
+		}
+
+		h1 {
+			font-size: 48px;
+			margin-bottom: 40px;
+			text-align: center;
+			text-transform: uppercase;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			color: #ffc107;
+		}
+
+		button {
+			display: inline-block;
+			padding: 12px 24px;
+			margin: 10px;
+			font-size: 16px;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			color: #fff;
+			background-color: #4CAF50;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+
+		button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="color: #ffc107;">GVFL</h1>
+	<button id="leaderboards-btn">All-Time Leaderboard</button>
+	<button id="rankings-btn">2023 Leaderboard</button>
+    <div id = "leaderboards"></div>
+    <script src="eventListener.js"></script>
+</body>
+</html>
